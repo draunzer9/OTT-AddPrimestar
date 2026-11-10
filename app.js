@@ -196,6 +196,37 @@ const state = {
       poster: 'https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&w=600&q=80',
       backdrop: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1600&q=80',
       description: 'Sunny takes his artisan counterfeit techniques international while the Special Task Force closes in.'
+    },
+    {
+      id: 'ragebait',
+      title: 'Ragebait',
+      tagline: 'Virality is toxic. The truth is lethal.',
+      genre: 'Psychological Thriller • Media Drama',
+      duration: '1h 58m',
+      year: '2026',
+      rating: '8.7',
+      badge: 'Trending New',
+      tierType: 'basic_included',
+      rentalPrice: null,
+      poster: 'https://images.unsplash.com/photo-1509281373149-e957c6296406?auto=format&fit=crop&w=600&q=80',
+      backdrop: 'https://images.unsplash.com/photo-1514565131-fce0801e5785?auto=format&fit=crop&w=1600&q=80',
+      description: 'An investigative journalist fabricates an algorithmic controversy to expose a tech mogul, but the manufactured outrage spirals into a deadly manhunt.'
+    },
+    {
+      id: 'protocar',
+      title: 'Protocar',
+      tagline: 'The ultimate autonomous machine. The final driver.',
+      genre: 'Sci-Fi Action • Cyberpunk Thriller',
+      duration: '2h 15m',
+      year: '2026',
+      rating: '9.0',
+      badge: 'New Release Rental',
+      tierType: 'tvod_new_release',
+      rentalPrice: 199,
+      licensingCost: 60,
+      poster: 'https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=600&q=80',
+      backdrop: 'https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=1600&q=80',
+      description: 'In 2038, a rogue test driver hijacks the world’s first sentient hypercar prototype to outrun an autonomous defense contractor across the desert badlands.'
     }
   ],
 
@@ -799,8 +830,8 @@ function renderTopSimulationBar() {
 
       <!-- Quick Action Simulation Triggers -->
       <div class="flex items-center space-x-2">
-        <button onclick="rentMovie('fighter-air')" class="px-2.5 py-1.5 rounded-lg bg-amber-950/80 hover:bg-amber-900 text-amber-300 border border-amber-600/50 font-medium flex items-center space-x-1 transition">
-          <span>🎬 + Rent Movie (+1 to Pool)</span>
+        <button onclick="rentMovie('protocar')" class="px-2.5 py-1.5 rounded-lg bg-amber-950/80 hover:bg-amber-900 text-amber-300 border border-amber-600/50 font-medium flex items-center space-x-1 transition">
+          <span>🎬 + Rent Protocar (+1 Pool)</span>
         </button>
         <button onclick="checkAndTriggerRentalPrompt(true)" class="px-2.5 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 font-medium flex items-center space-x-1 transition">
           <span>⚡ Test 5-Day Ad-Free Offer</span>
@@ -1016,8 +1047,8 @@ function renderContentRows() {
                 Claim 5 Days Ad-Free (Reset Pool to 0)
               </button>
             ` : `
-              <button onclick="rentMovie('fighter-air')" class="px-5 py-2.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-sm transition shadow-lg glow-gold">
-                + Rent Movie (+1 to Pool)
+              <button onclick="rentMovie('protocar')" class="px-5 py-2.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-sm transition shadow-lg glow-gold">
+                + Rent Protocar (+1 to Pool)
               </button>
             `}
           </div>
